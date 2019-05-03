@@ -5,6 +5,8 @@ require 'PHPMailer-master/src/Exception.php';
 require 'PHPMailer-master/src/PHPMailer.php';
 require 'PHPMailer-master/src/SMTP.php';
 
+
+    //you need the php mailer file to require and use 
     if(isset($_POST['email']) && isset($_POST['name']) && isset($_POST['number']) && isset($_POST['adress']) && isset($_POST['provider'])){
         $error = "";
         $succes = "";
