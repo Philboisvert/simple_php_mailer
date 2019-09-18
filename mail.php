@@ -38,14 +38,14 @@ require 'PHPMailer-master/src/SMTP.php';
             }
         }
     }
-    $email_from = 'info@fibrile.ca';
+    $email_from = '';
     $email_subject = "Restez connecté - Fibrile";
     $mail = new PHPMailer;
     $email_body = "Nom: " . $name . " Email: " . $to . " Adresse: " . $adress . " Fournisseur: " . $provider . " Numéro de téléphone: " . $number . " " . $service_msg;
     $mail->CharSet = 'UTF-8';
     $mail->setFrom($to, $name);
     $mail->addAddress($email_from, 'Fibrile Télécom');
-    $mail->Subject  = 'Restez connecté - Fibrile';
+    $mail->Subject  = '';
     $mail->Body     = $email_body;
 
     if(!$mail->send()) {
